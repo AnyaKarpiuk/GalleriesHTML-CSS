@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: #F1F2ED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.gallery3 {
+  position: relative;
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center; 
+}
+
+.gallery3::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img1 , .img2{
+  position: relative;
+  display: block;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin: 6px;
+  flex-grow: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+}
+
+.img1 {
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.img2 {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.img1:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  padding: 5px;
+  border: double 4px #707070;
+}
+
+.img2:hover{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  padding: 5px;
+  border: double 4px #707070;
+}
+
+.container:hover .text{
+  opacity:1;
+}
+
+.text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F1F2ED;
+  font-size: 30px;
+  padding: 20px;
+  border: solid 4px #F1F2ED;
+  opacity: 0;
+  font-family: 'Ranchers', cursive;
+} 
