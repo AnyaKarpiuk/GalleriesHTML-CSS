@@ -2,11 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cinzel+Decorative:wght@700&family=IM+Fell+Double+Pica&display=swap');
 
 html {
-    background-image: linear-gradient(130deg, rgba(19, 79, 95, 0.479), rgba(30, 124, 150, 0.116));
+    background-image: linear-gradient(130deg, #3E565E, rgba(30, 124, 150, 0.116));
 }
 
 body {
     background-repeat: no-repeat;
+    align-items: center;
+}
+
+.header {
+    font-family: 'Cinzel Decorative', cursive;
+    background-color:#3E565E;
+    color: #F2F2F2;
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+    border: 1px solid #F2F2F2;
 }
 
 .gallery1::after {
@@ -23,7 +35,7 @@ body {
     transform: rotate(-3deg);
 }
 
-img {
+.fox {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -41,22 +53,46 @@ img {
     background: #F2F2F2;
 }
 
-img:hover {
+.fox:hover {
     filter: initial;
 }
 
 .gallery:hover {
     transform: rotate(0deg);
 }
+/* 
+.gallery2 {
+    position: relative;
+    margin: 15px;
+    flex-grow: 1;
+    max-width: 1600px;
+    max-height: 1600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: red;
+    justify-items: center;
+    justify-content: space-between;
 
-.header {
-    font-family: 'Cinzel Decorative', cursive;
-    background-color: rgba(37, 45, 51, 0.651);
-    color: #F2F2F2;
-    padding: 5px;
-    font-size: 30px;
-    text-align: center;
-    margin: 25px;
-    border: 1px solid #F2F2F2;
-    text-decoration: underline;
+    align-items: center;
 }
+
+.cactus {
+    z-index: 1;
+    grid-column: span 2;
+    width: 250px;
+    height: 250px;
+    clip-path: polygon(50% 0, 100% 50%, 79% 71%, 70% 68%, 73% 78%, 50% 100%, 0 50%);
+    transform: scale(1);
+    object-fit: cover;
+    margin-bottom: -20%;
+}
+
+.cactus:nth-child(3n + 1) {
+    grid-column: 2 / span 2;
+}
+  
+.cactus:hover {
+    z-index: 2;
+    transform: scale(2);
+  } */
