@@ -60,39 +60,3 @@ body {
 .gallery:hover {
     transform: rotate(0deg);
 }
-/* 
-.gallery2 {
-    position: relative;
-    margin: 15px;
-    flex-grow: 1;
-    max-width: 1600px;
-    max-height: 1600px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    background-color: red;
-    justify-items: center;
-    justify-content: space-between;
-
-    align-items: center;
-}
-
-.cactus {
-    z-index: 1;
-    grid-column: span 2;
-    width: 250px;
-    height: 250px;
-    clip-path: polygon(50% 0, 100% 50%, 79% 71%, 70% 68%, 73% 78%, 50% 100%, 0 50%);
-    transform: scale(1);
-    object-fit: cover;
-    margin-bottom: -20%;
-}
-
-.cactus:nth-child(3n + 1) {
-    grid-column: 2 / span 2;
-}
-  
-.cactus:hover {
-    z-index: 2;
-    transform: scale(2);
-  } */
