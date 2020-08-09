@@ -63,20 +63,3 @@
   padding: 5px;
   border: double 4px #707070;
 }
-
-.container:hover .text{
-  opacity:1;
-}
-
-.text {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #F1F2ED;
-  font-size: 30px;
-  padding: 20px;
-  border: solid 4px #F1F2ED;
-  opacity: 0;
-  font-family: 'Ranchers', cursive;
-} 

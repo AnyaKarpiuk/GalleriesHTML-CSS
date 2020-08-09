@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Diplomata+SC&display=swap');
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery4 {
+  width: 1100px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  border: dashed 2px white;
+}
+
+.cell {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  position: relative;
+  font-family: 'Arizonia', cursive;
+}
+
+.text {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  padding: 10px;
+  border: solid 1px white;
+  opacity: 0;
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.seven {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end:5;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.cell:hover img{
+  opacity: 0.2;
+}
+
+.cell:hover .text{
+  animation-name: textAnim;
+  animation-duration: 6s;
+}
+
+@keyframes textAnim {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}

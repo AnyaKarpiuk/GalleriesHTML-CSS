@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cinzel+Decorative:wght@700&family=IM+Fell+Double+Pica&display=swap');
 
 html {
-    background-image: linear-gradient(130deg, #3E565E, rgba(30, 124, 150, 0.116));
+    background-image: linear-gradient(130deg, #4B657A, rgb(163, 176, 187));
 }
 
 body {
@@ -12,8 +12,7 @@ body {
 
 .header {
     font-family: 'Cinzel Decorative', cursive;
-    background-color:#3E565E;
-    color: #F2F2F2;
+    color: #C4C76F;
     padding: 2px;
     font-size: 30px;
     text-align: center;
